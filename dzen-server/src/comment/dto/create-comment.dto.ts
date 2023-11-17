@@ -32,5 +32,5 @@ export class CreateCommentDto {
   parent_id?: number;
 
   @IsOptional()
-  image: number;
+  image?: number;
 }

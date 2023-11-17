@@ -20,6 +20,12 @@ export class Comment {
   @Column()
   email: string;
 
+  // @Column({
+  //   type: 'varchar',
+  //   length: 150,
+  //   default: '',
+  // })
+  // homepage: string;
   @Column({
     type: 'varchar',
     length: 150,
@@ -38,7 +44,7 @@ export class Comment {
     length: 150,
     default: '',
   })
-  image: string;
+  file: string;
 
   @CreateDateColumn()
   created_at: Date;
